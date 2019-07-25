@@ -1,3 +1,13 @@
+## List of potential components
+
+Factor
+Factor Bar
+Map
+Information Output
+Text
+Header
+Nav
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
