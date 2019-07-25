@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import FactorBar from './Components/FactorBar';
+//import Header from './Components/Header';
+import Nav from './Components/Nav';
 import './App.css';
 
-function App() {
-  return (
+//Reference App:
+//http://ternercenter2.berkeley.edu/examplecities/index.html?city=San%20Francisco
+
+class App extends Component {
+  
+  constructor(e){
+    super();
+    this.state = {
+      placeholder: null
+    }
+  }
+
+  async componentDidMount() {
+    //Get Initial Data
+  }
+
+  async componentDidUpdate(){
+    //New data, update state
+  }
+
+  selectFactor = (e) => {
+    //factor selected
+  }
+
+  render() {
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <FactorBar />
     </div>
-  );
+    );
+  }
 }
 
 export default App;
