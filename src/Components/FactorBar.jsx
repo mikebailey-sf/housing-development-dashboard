@@ -4,10 +4,10 @@ import Factor from './Factor';
 class FactorBar extends Component {
   render() {
     return (
-      <div>
-        <Factor name='Phase'/>
-        <Factor name='Neighborhood Density'/>
-        <Factor name='Historical Significance'/>
+      <div className='factor-bar col-5'>
+        <Factor type='switch' name='Phase'/>
+        <Factor type='buttons' name='Neighborhood Density'/>
+        <Factor type='buttons' name='Historical Significance'/>
       </div>
     );
   }

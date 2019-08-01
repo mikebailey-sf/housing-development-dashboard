@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import FactorBar from './Components/FactorBar';
 //import Header from './Components/Header';
-import Nav from './Components/Nav';
+import NavB from './Components/Nav';
+import Results from './Components/Results';
 import './App.css';
 
 //Reference App:
@@ -31,8 +32,13 @@ class App extends Component {
   render() {
     return (
     <div className="App">
-      <Nav />
-      <FactorBar />
+      <NavB />
+      <div className='container'>
+        <div className='row'>
+          <FactorBar />
+          <Results />
+        </div>
+      </div>  
     </div>
     );
   }

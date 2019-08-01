@@ -1,17 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Nav, NavItem, NavLink } from 'reactstrap';
 
-class Nav extends Component {
+export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <ul>
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
-        </ul>
+        <Nav>
+          <NavLink href="#">Dev Time by Units Added</NavLink> <NavLink href="#">Dev times by Size Category</NavLink> <NavLink href="#">Dev Times by Stage</NavLink> <NavLink disabled href="#">About</NavLink>
+        </Nav>
       </div>
     );
   }
 }
-
-export default Nav;
